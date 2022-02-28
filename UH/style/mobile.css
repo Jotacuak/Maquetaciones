@@ -1,0 +1,142 @@
+@media (max-width:479px) {
+
+    header{
+        min-width: max-content;
+    }
+
+    .mobile-hidden{
+        display: none;
+    }
+
+    .today-news-islands ul{
+        margin: auto 1rem;
+    }
+
+    .today-news-islands li{
+        font-size: .7rem;
+        margin: auto .3rem;
+    }
+
+    .header-fixed{
+        display: flex;
+        height: 3.5rem;
+        flex-wrap: nowrap;
+    }
+
+    .header-burguer svg{
+        height: 3rem;
+        margin: 0 1rem;
+        padding: 0;
+        width: 1.8rem;
+    }
+
+    .header-title svg{
+        height: 4rem;
+        margin-right: .5rem;
+        padding: 0;
+        width: 9rem;
+    }
+
+    .header-user{
+        display: flex;
+        flex-wrap: nowrap;
+        margin: auto 0;
+    }
+
+    .header-user .login button{
+        background-color: unset;
+        border: 0 unset;
+        font-size: 0;
+    }
+
+    .header-user svg{
+        height: 1.7rem;
+        fill: hsl(0, 0%, 100%);
+        width: 1.7rem;
+    }
+
+    .header-user .signin button{
+        margin-top: 0.2rem;
+        padding: .3rem 0.1rem;
+    }
+
+    .menu-list{
+        overflow: scroll;
+    }
+
+    .menu-list ul{
+        margin: auto .4rem;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .menu-list li{
+        margin: auto .5rem;
+    }
+
+    main{
+        margin: auto 1rem;
+    }
+
+    .container{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider{
+        margin: auto .3rem;
+    }
+
+    .two-columns-aside{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .one-column-main{
+        width: 100%;
+    }
+
+    .column-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column-mobile .column{
+        width: 100%;
+    }
+
+    .column .news{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .column .news-img{
+        margin-right: .5rem;
+    }
+
+    .news{
+        border-bottom: 0.2rem solid hsl(0, 0%, 90%);
+    }
+
+    .news .info{
+        width: 60%;
+    }
+
+    .main-mobile{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto 0;
+    }
+
+    h2,h3{
+        font-size: 1rem;
+    }
+
+    h4{
+        font-size: .7rem;
+    }
+
+
+}

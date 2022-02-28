@@ -1,0 +1,342 @@
+/* BODY */
+
+
+body{
+    background-color: hsl(0, 0%, 100%);
+    display: flex; 
+    flex-direction: column;
+    font-family: Roboto,"Helvetica Neue",Arial;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMAGE */
+
+img{
+    height: auto;
+    width: 100%;
+}
+
+/* TOP HEADER */
+
+.top-header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.today-news{
+    align-items: center;
+    background-color: hsl(0, 0%, 90%);
+    display: flex;
+    height: 1.8rem;
+    justify-content: space-between;
+    position: relative;
+}
+
+.today-news-menu ul{
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+}
+
+.today-news-menu li{
+    font-size: 0.75rem;
+    list-style-type: none;
+    margin: 0.2rem;
+}
+
+.today-news-menu li:not(:first-child):not(:last-child)::after{
+    padding-left: 0.25rem;
+    content: "-";
+}
+
+.today-news-menu #todaynews{
+    color: hsl(0, 100%, 40%);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.today-news-islands ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 5rem;    
+}
+
+.today-news-islands li{
+    font-size: 0.70rem;
+    margin: 0.2rem;
+}
+
+.today-news-islands li:not(:last-child):after{
+    content: "|";
+    padding-left: 0.5rem;
+    color: hsl(0, 0%, 67%);
+    font-weight: bold;
+}
+
+/* HEADER FIXED */
+
+.header-fixed{
+    background-color: hsl(0, 100%, 40%);
+    display: flex;
+    flex-wrap: wrap;
+    height: 6rem;
+    justify-content: space-between;
+}
+
+.header-burguer svg{
+    padding-top: .5rem;
+    height: 5rem;
+    margin-left: 5rem;
+    width: 2.7rem;
+}
+
+.header-burguer svg path,.header-title svg path{
+    fill: hsl(0, 0%, 100%);
+}
+
+.header-title svg{
+    height: 3rem;
+    padding-left: 6rem;
+    padding-top: 1.5rem;
+    width: 100%;
+}
+
+.header-user{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 5rem;
+}
+
+.header-user .login button{
+    background-color: hsl(0, 0%, 90%);
+    border: 0.3rem solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-right: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header-user svg{
+    height: 1.5rem;
+    width: 1.5rem;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.header-user .signin button{
+    background-color: hsl(47, 100%, 50%);
+    border: .15rem solid transparent;
+    border-radius: 0.25rem;
+    font-family: "Times New Roman",Times,serif;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0.4rem 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header-fixed .header-scroller{
+    height: 0.2rem;
+    width: 100%;
+}
+
+/* HEADER MENU */
+
+.menu-list{
+    background-color: hsl(0, 0%, 90%);
+    border-bottom: 0.2rem solid hsl(0, 0%, 80%);
+    height: 2rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.2rem;
+    width: 100%;
+}
+
+#menu-link svg{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.menu-list ul{
+    display: flex;
+    justify-content: space-around;
+    padding-top: .5rem;
+    margin: 0 4rem;
+}
+
+.menu-list li{
+    color: hsl(0, 0%, 20%);
+    font-family: "Roboto Condensed";
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#search-icon svg{
+    height: 1rem;
+    width: 1rem;
+}
+
+.menu-list svg{
+    fill: hsl(0, 0%, 20%);
+}
+
+
+/* MAIN */
+
+main{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 3rem;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.two-columns-aside{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.one-column-main{
+    width: 65%;
+}
+
+.ad{
+    top: 0;
+    position: sticky;
+}
+
+.slider{
+    margin-bottom: .5rem;
+}
+
+.one-column .title-slider{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.column{
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: .3rem 0.5rem;
+    vertical-align: top;
+}
+
+.two-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-columns .column{
+    width: 45%;
+}
+
+.three-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.three-columns .column{
+    width: 33%;
+}
+
+.four-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.four-columns .column{
+    width: 23%;
+}
+
+.one-column .border{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: .2rem auto;
+    padding-bottom: 0.5rem;
+}
+
+.border-grey{
+    background-color: hsl(0, 0%, 93%);
+    height: .3rem;
+    width: 25%;
+}
+
+.border-red{
+    background-color: hsl(0, 100%, 40%);
+    height: .3rem;
+    width: 50%;
+}
+
+.news .column{
+    width: 100%;
+}
+
+.list{
+    font-weight: bold;
+}
+
+.list li::before{
+    background: hsl(0, 100%, 40%);
+    width: 0.4rem;
+    height: 0.4rem;
+    vertical-align: middle;
+    content: "";
+    display: inline-block;
+    margin-right: 0.4rem;
+}
+
+p,h4,h5{
+    display: block;
+    margin-block-start: 0.2rem;
+    margin-block-end: 0.3rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+h1{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h3{
+    font-family: Roboto,"Helvetica Neue",Arial;
+    font-weight: 900;
+    line-height: 1rem;
+}
+
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    line-height: 1.3rem;
+}
+
+h5{
+    color: hsl(0, 100%, 40%);
+}
+
+p{
+    color: hsl(0, 0%, 33%);
+    font-size: 85%;
+    font-weight: 500;
+}

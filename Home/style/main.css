@@ -1,0 +1,369 @@
+/*====================
+======= Parte estructural ======
+======================*/
+
+body{
+    background-color: hsl(308, 100%, 80%);
+    display:flex; 
+    flex-direction:column;
+    margin: 1rem auto;
+    min-height: 100vh;
+    width: 90%;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+/*====================
+====== Tipografía ======
+======================*/
+
+
+h1, h2, h3, h4, h5, h6, a, p{
+    color: hsl(180, 5%, 25%);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Ubuntu";
+}
+
+h5, h6 {
+    font-family: "Ubuntu Condensed";
+}
+
+a, td, p, button{
+    font-family: "Ubuntu";
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h2, h3 {
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h4 {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+a:focus, a:hover {
+    outline: none;
+    outline-offset: 0;
+    text-decoration: none;
+}
+
+/*====================
+======== Imagenes =========
+======================*/
+
+img{
+    max-width: 100%;
+}
+
+/* Header */
+
+.logo-title{
+    display: flex;
+    margin: auto 0;
+}
+
+.logo{
+    width: max-content;
+}
+
+.logo svg{
+    height: 3rem;
+    width: 3rem;
+}
+
+.logo svg path{
+    fill: #3e4444;
+}
+
+.title{
+    margin-left: 1em;
+}
+
+.title h1{
+    text-align: left;
+}
+
+.menu{
+    margin: auto 0;
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.menu ul li{
+    margin: 1rem;
+}
+
+.menu ul li a{
+    color:hsl(180, 5%, 25%);
+    font-family: "Ubuntu Condensed";
+    text-decoration: none;
+}
+
+/* Slider */
+
+.slider{
+    margin-bottom: 1rem;
+}
+
+.slider-image{
+    position: relative;
+    z-index: 1000;
+}
+
+.slider-title{
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    z-index: 1001;
+}
+
+.slider-button{
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    z-index: 1001;
+}
+
+.slider-button button{
+    padding: 0.5em 2em;
+}
+
+.slider-text a{
+    z-index: 1001;
+}
+
+/* Featured */
+
+.featured-title{
+    width: 100%;
+}
+
+.featured-title h3{
+    text-align: center;
+}
+
+.featured-element{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
+
+.featured-images{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.featured-element-image{
+    height: 18vh;
+    overflow: hidden;
+}
+
+.featured-element-text{
+    width: 100%;    
+}
+
+.featured-element-text p{
+    padding: 10% 0;
+    text-align: center;
+}
+
+/* Article */
+
+.article{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.article p{
+    padding: 10%;
+}
+
+/* Footer */
+
+footer{
+    margin-top: auto; 
+    width: 100%;
+}
+
+.copyright{
+    margin-bottom: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.author{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+@media (min-width: 1920px) {
+
+    h1 {
+        font-size: 3.5em;
+    }
+    
+    h2 {
+        font-size: 3em;
+    }
+
+    .logo svg{
+        height: 4em;
+        width: 4em;
+    }
+
+    .copyright p{
+        font-size: 1.5em;
+    }
+}
+
+
+@media (max-width:1024px) {
+
+    header{
+        height: max-content;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .logo svg{
+        height: 2em;
+        width: 2em;
+    }
+
+    .title{
+        margin-left: 0.5em;
+    }
+
+    .copyright{
+        margin: 1em 0;
+    }
+
+    .author{
+        padding: 1em;
+    }
+}
+
+@media (max-width:479px) {
+
+    header{
+        height: max-content;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .logo{
+        height: max-content;
+    }
+
+    .logo svg{
+        height: 2em;
+        width: 2em;
+    }
+
+    .title{
+        height: max-content;
+        margin-left: 0.5em;
+    }
+
+    .slider-title{
+        left: 8%;
+        top: 15%;
+    }
+
+    .slider-button{
+        left: 15%;
+        top: 19%;
+    }
+
+    .featured-images {
+        display: flex;
+        flex-direction: column;
+        margin: 0.2rem;
+    }
+
+    .featured-images p{
+        text-align: center;
+    }
+
+    .featured-element{
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0.5rem;
+    }
+
+    .featured-element-image{
+        height: auto;
+    }
+    
+    .article{
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 0;
+        width: 100%;
+    }
+
+    .article-image{
+        height: auto;
+        max-width: 80%;
+    }
+
+    .article p{
+        padding: 0;
+        text-align: center;
+    }
+
+    .copyright{
+        margin: 1em 0;
+    }
+
+    .author{
+        padding: 1em;
+    }
+}
+
+
+
+
