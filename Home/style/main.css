@@ -15,15 +15,59 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 1rem;
     height: 10vh;
 }
+
+main{
+    margin-top: 5%;
+}
+
+/*====================
+====== Columns ======
+======================*/
+
+.desktop-one-column{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.desktop-one-column .one-column{
+    margin-bottom: 5%;
+}
+
+.one-column{
+    width: 100%;
+}
+
+.one-column h2{
+    text-align: center;
+}
+
+.desktop-two-column{
+    display: flex;
+}
+
+.desktop-two-column .column{
+    width: 48%;
+}
+
+.desktop-two-column .column-aside{
+    width: 5%;
+}
+
+.column-form{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /*====================
 ====== Tipografía ======
 ======================*/
 
 
-h1, h2, h3, h4, h5, h6, a, p{
+h1, h2, h3, h4, h5, h6, a, p, label{
     color: hsl(180, 5%, 25%);
 }
 
@@ -31,7 +75,7 @@ h1, h2, h3, h4 {
     font-family: "Ubuntu";
 }
 
-h5, h6 {
+h5, h6, form {
     font-family: "Ubuntu Condensed";
 }
 
@@ -51,7 +95,7 @@ h2, h3 {
     text-decoration: none;
 }
 
-h4 {
+h4{
     font-weight: 600;
     text-decoration: none;
 }
@@ -96,7 +140,7 @@ img{
 }
 
 .logo svg path{
-    fill: #3e4444;
+    fill: hsl(180, 5%, 25%);
 }
 
 .title{
@@ -207,6 +251,66 @@ img{
 
 .article p{
     padding: 10%;
+}
+
+/* Contactos */
+
+.column-aside{
+    margin: auto .5rem;
+}
+
+.column-contact{
+    padding-left: 1rem;
+    padding-top: 2.5rem;
+}
+
+.contact-us svg{
+    height: 2rem;
+    width: 2rem;
+}
+
+.contact-us svg path{
+    fill: hsl(293, 51%, 37%);
+}
+
+.column input{
+    margin: .3rem auto;
+}
+
+input[type=text]{
+    border: .2rem transparent;
+    border-radius: .25rem;
+    width: 97%;
+}
+
+.one-column textarea{
+    margin: .3rem auto;
+}
+
+textarea[type=text]{
+    border: .2rem transparent;
+    border-radius: .25rem;
+    resize: none;
+    width: 99%;
+}
+
+.one-column button{
+    background-color: hsl(293, 51%, 37%);
+    border: .2rem transparent;
+    border-radius: .25rem;
+    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 .5rem 1rem 0 rgba(0,0,0,0.19);
+    color: hsl(308, 100%, 80%);
+    cursor: pointer;
+    float: right;
+    padding: .5rem;
+    transition: all 150ms ease-in-out;
+    width: 20%;
+}
+
+.one-column button:hover {
+    background-color: transparent;
+    box-shadow: 0 0 .2rem 0 hsl(293, 51%, 37%), 0 0 .2rem .1rem hsl(293, 51%, 37%);
+    color: hsl(293, 51%, 37%);
 }
 
 /* Footer */
