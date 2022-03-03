@@ -15,8 +15,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 1rem;
-    height: 10vh;
 }
 
 main{
@@ -32,35 +30,17 @@ main{
     flex-wrap: wrap;
 }
 
-.desktop-one-column .one-column{
+.desktop-one-column .column{
     margin-bottom: 5%;
 }
 
-.one-column{
+.column{
     width: 100%;
-}
-
-.one-column h2{
-    text-align: center;
 }
 
 .desktop-two-column{
     display: flex;
 }
-
-.desktop-two-column .column{
-    width: 48%;
-}
-
-.desktop-two-column .column-aside{
-    width: 5%;
-}
-
-.column-form{
-    display: flex;
-    justify-content: space-between;
-}
-
 
 /*====================
 ====== Tipografía ======
@@ -171,6 +151,19 @@ img{
     text-decoration: none;
 }
 
+.hamburguer{
+    display: none;
+}
+
+.hamburguer svg{
+    height: 2rem;
+    width: 2rem;
+}
+
+.hamburguer path{
+    fill: hsl(180, 5%, 25%);
+}
+
 /* Slider */
 
 .slider{
@@ -194,10 +187,24 @@ img{
     left: 20%;
     top: 35%;
     z-index: 1001;
+
 }
 
 .slider-button button{
-    padding: 0.5em 2em;
+    background-color: hsl(308, 100%, 80%);
+    border: .2rem solid hsl(293, 51%, 37%);
+    border-radius: .25rem;
+    color: hsl(308, 100%, 80%);
+    cursor: pointer;
+    padding: .5rem;
+    transition: all 150ms ease-in-out;
+    padding: 0.25em 1em;
+}
+
+.slider-button button:hover {
+    background-color: transparent;
+    box-shadow: 0 0 .2rem 0 hsl(293, 51%, 37%), 0 0 .2rem .1rem hsl(293, 51%, 37%);
+    color: hsl(293, 51%, 37%);
 }
 
 .slider-text a{
@@ -255,46 +262,73 @@ img{
 
 /* Contactos */
 
-.column-aside{
-    margin: auto .5rem;
+
+.contact-title h2{
+    text-align: center;
 }
 
-.column-contact{
-    padding-left: 1rem;
-    padding-top: 2.5rem;
+.contact-us{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.contact-us svg{
+.contact-us-option{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.contact-us-option-icon{
+    margin-right: .5rem;
+}
+
+.contact-us-option-icon svg{
     height: 2rem;
     width: 2rem;
 }
 
-.contact-us svg path{
+.contact-us-option-icon svg path{
     fill: hsl(293, 51%, 37%);
 }
 
-.column input{
-    margin: .3rem auto;
+.contact-us-option-map{
+    margin-top: .5rem;
 }
 
-input[type=text]{
+.contact-us-option-map iframe{
     border: .2rem transparent;
-    border-radius: .25rem;
-    width: 97%;
+    border-radius: .5rem;
+    height: 20rem;
+    width: 25rem;
 }
 
-.one-column textarea{
-    margin: .3rem auto;
+.contact-form-element{
+    margin-right: .5rem;
 }
 
-textarea[type=text]{
+.contact-form-element-label{
+    margin-bottom: .5rem;
+}
+
+.contact-form-element-input input{
     border: .2rem transparent;
+    border-bottom: .2rem solid hsl(293, 51%, 37%);
     border-radius: .25rem;
+    margin-bottom: .5rem;
+    padding: .2rem 0;
+    width: 100%;
+}
+
+.contact-form-element-input textarea{
+    border: .2rem transparent;
+    border-bottom: .2rem solid hsl(293, 51%, 37%);
+    border-radius: .25rem;
+    height: 16rem;
     resize: none;
-    width: 99%;
+    width: 100%;
 }
 
-.one-column button{
+.contact-form-element-button button{
     background-color: hsl(293, 51%, 37%);
     border: .2rem transparent;
     border-radius: .25rem;
@@ -307,7 +341,7 @@ textarea[type=text]{
     width: 20%;
 }
 
-.one-column button:hover {
+.contact-form-element-button button:hover {
     background-color: transparent;
     box-shadow: 0 0 .2rem 0 hsl(293, 51%, 37%), 0 0 .2rem .1rem hsl(293, 51%, 37%);
     color: hsl(293, 51%, 37%);
@@ -387,15 +421,43 @@ footer{
 @media (max-width:479px) {
 
     header{
-        height: max-content;
+        border-bottom: .5rem solid hsl(293, 51%, 37%);
+        border-radius: 1rem;
+    }
+
+    header .title{
+        padding-left: 2rem;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .hamburguer{
+        display: block;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .mobile-one-column{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .mobile-one-column .column{
+        margin-top: .5rem;
+        width: 100%;
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 2rem;
     }
     
     h2 {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .logo{
@@ -413,13 +475,17 @@ footer{
     }
 
     .slider-title{
-        left: 8%;
-        top: 15%;
+        left: 7%;
+        top: 13%;
     }
 
     .slider-button{
         left: 15%;
-        top: 19%;
+        top: 16%;
+    }
+
+    .slider-button button{
+        border: .1rem solid hsl(293, 51%, 37%);
     }
 
     .featured-images {
@@ -457,6 +523,29 @@ footer{
     .article p{
         padding: 0;
         text-align: center;
+    }
+
+    .contact-us-option-map{
+        margin: 0;
+        margin-top: .5rem;
+    }
+
+    .contact-us-option-map iframe{
+        height: 10rem;
+        width: 100%;
+    }
+
+    .contact-form-element-input input{
+        width: 100%;
+    }
+
+    .contact-form-element-input textarea[type=text]{
+        height: 10rem;
+        width: 100%;
+    }
+
+    .contact-form-element-button button{
+        float: left;
     }
 
     .copyright{
