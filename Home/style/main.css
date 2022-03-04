@@ -42,6 +42,27 @@ main{
     display: flex;
 }
 
+.desktop-three-column{
+    display: flex;
+}
+
+.desktop-three-column .column{
+    width: 30%;
+}
+
+.two-column-aside{
+    display: flex;
+}
+
+.two-column-aside .column-aside{
+    width: 20%;
+}
+
+.two-column-aside .column-main{
+    width: 80%;
+}
+
+
 /*====================
 ====== Tipografía ======
 ======================*/
@@ -55,11 +76,11 @@ h1, h2, h3, h4 {
     font-family: "Ubuntu";
 }
 
-h5, h6, form {
+h5, h6, form, option{
     font-family: "Ubuntu Condensed";
 }
 
-a, td, p, button{
+a, td, p, button, label{
     font-family: "Ubuntu";
 }
 
@@ -347,6 +368,148 @@ img{
     color: hsl(293, 51%, 37%);
 }
 
+/* Gallery */
+
+.gallery-main-category h3{
+    margin-bottom: 1rem;
+}
+
+.gallery-main-category-element{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .5rem;
+}
+
+.gallery-main-category-element-input input{
+    margin-right: .5rem;
+}
+
+.gallery-main-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+}
+
+.gallery-main-list-select select{
+    border-radius: .25rem;
+}
+
+.gallery-main-product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-main-product-unit{
+    margin-bottom: 1rem;
+}
+
+.gallery-main-product-unit-info-name, .red{
+    margin-bottom: .5rem;
+}
+
+.red p{
+    color: hsl(0, 100%, 50%);
+}
+
+.gallery-main-product-unit-info-button button{
+    background-color: hsl(293, 51%, 37%);
+    border: .2rem transparent;
+    border-radius: .25rem;
+    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 .5rem 1rem 0 rgba(0,0,0,0.19);
+    color: hsl(308, 100%, 80%);
+    cursor: pointer;
+    padding: .5rem;
+    transition: all 150ms ease-in-out;
+    width: 30%;
+}
+
+.gallery-main-product-unit-info-button button:hover{
+    background-color: transparent;
+    box-shadow: 0 0 .2rem 0 hsl(293, 51%, 37%), 0 0 .2rem .1rem hsl(293, 51%, 37%);
+    color: hsl(293, 51%, 37%);
+}
+
+/* Product file */
+
+.product-file-general{
+    margin-left: 2rem;
+    margin-top: 4rem;
+}
+
+.product-file-general-info-title p{
+    font-size: 3rem;
+}
+
+.product-file-general-info-price p{
+    font-size: 2rem;
+}
+
+.product-file-general-info-description p{
+    font-style: italic;
+}
+
+.product-file-general-shop-amount{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem auto;
+}
+.product-file-general-shop-amount-txt{
+    margin-right: 1rem;
+    padding-top: .3rem;
+}
+
+.minus, .plus{
+    width: 1rem;
+    height: 1rem;
+    background: hsl(293, 51%, 37%);
+    border-radius: .25rem;
+    color: hsl(0, 0%, 100%);
+    padding: .3rem;
+    border: .1rem solid hsl(0, 0%, 87%);
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.product-file-general-shop-amount-button input{
+    height: 1.5rem;
+    width: 4rem;
+    text-align: center;
+    font-size: 1rem;
+    border: .1rem solid hsl(0, 0%, 87%);
+    border-radius: .25rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.product-file-general-shop-button{
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-file-general-shop-button button{
+    background-color: hsl(293, 51%, 37%);
+    border: .2rem transparent;
+    border-radius: .25rem;
+    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 .5rem 1rem 0 rgba(0,0,0,0.19);
+    color: hsl(308, 100%, 80%);
+    cursor: pointer;
+    padding: .5rem 1rem;
+    transition: all 150ms ease-in-out;
+}
+
+.product-file-general-shop-button button:hover{
+    background-color: transparent;
+    box-shadow: 0 0 .2rem 0 hsl(293, 51%, 37%), 0 0 .2rem .1rem hsl(293, 51%, 37%);
+    color: hsl(293, 51%, 37%);
+}
+
+.product-file-general-shop-button svg{
+    height: 2rem;
+    width: 2rem;
+}
+
 /* Footer */
 
 footer{
@@ -443,7 +606,7 @@ footer{
 
     .mobile-one-column{
         display: flex;
-        flex-wrap: wrap;
+        align-items: center;
         flex-direction: column;
     }
 
@@ -456,7 +619,7 @@ footer{
         font-size: 2rem;
     }
     
-    h2 {
+    h2{
         font-size: 1rem;
     }
 
@@ -548,6 +711,10 @@ footer{
         float: left;
     }
 
+    .gallery-main-list-stock{
+        display: none;
+    }
+        
     .copyright{
         margin: 1em 0;
     }
