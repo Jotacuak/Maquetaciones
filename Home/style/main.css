@@ -57,6 +57,18 @@ main{
     width: 24%;
 }
 
+.desktop-two-column-aside{
+    display: flex;
+}
+
+.desktop-two-column-aside .column-main{
+    width: 65%;
+}
+
+.desktop-two-column-aside .column-aside{
+    width: 30;
+}
+
 .two-column-aside{
     display: flex;
 }
@@ -146,7 +158,7 @@ img{
 }
 
 /*====================
-======== Especiales =========
+======== Specials =========
 ======================*/
 
 .orange p{
@@ -175,7 +187,9 @@ img{
     color: hsl(293, 51%, 37%);
 }
 
-/* Header */
+/*====================
+======== Header =========
+======================*/
 
 .logo-title{
     display: flex;
@@ -257,18 +271,15 @@ img{
 .slider-button{
     position: absolute;
     left: 20%;
-    top: 35%;
+    top: 36%;
     z-index: 1001;
 
 }
 
 .slider-button button{
-    background-color: hsl(308, 100%, 80%);
-    border: .2rem solid hsl(293, 51%, 37%);
-    color: hsl(308, 100%, 80%);
-    padding: .5rem;
-    padding: 0.25em 1em;
+    padding: .5rem 1rem;
 }
+
 
 .slider-text a{
     z-index: 1001;
@@ -294,7 +305,6 @@ img{
 .featured-images{
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
 }
 
 .featured-element-image{
@@ -323,7 +333,9 @@ img{
     padding: 10%;
 }
 
-/* Contactos */
+/*====================
+======== Contact us =========
+======================*/
 
 
 .contact-title h2{
@@ -397,7 +409,9 @@ img{
     width: 20%;
 }
 
-/* Gallery */
+/*====================
+======== Gallery =========
+======================*/
 
 .gallery-main-category h3{
     margin-bottom: 1rem;
@@ -446,7 +460,9 @@ img{
     width: 30%;
 }
 
-/* Product file */
+/*====================
+======== Product file =========
+======================*/
 
 .product-file-general{
     margin-left: 2rem;
@@ -514,7 +530,9 @@ img{
 }
 
 
-/* Cart */
+/*====================
+======== Cart =========
+======================*/
 
 .cart-main-title, .cart-main-total{
     width: 100%;
@@ -542,7 +560,9 @@ main .cart-main{
     padding: .5rem 1rem;
 }
 
-/* Checkout */
+/*====================
+======== Checkout =========
+======================*/
 
 .checkout-main-title h2{
     margin-bottom: 2rem;
@@ -608,7 +628,9 @@ main .cart-main{
     padding: .5rem 1rem;
 }
 
-/* Footer */
+/*====================
+======== Footer =========
+======================*/
 
 footer{
     margin-top: auto; 
@@ -771,7 +793,7 @@ footer{
 
     .slider-button{
         left: 15%;
-        top: 16%;
+        top: 17%;
     }
 
     .slider-button button{
@@ -801,12 +823,17 @@ footer{
     .article{
         align-items: center;
         flex-direction: column-reverse;
-        margin: 0;
+        margin: auto;
         width: 100%;
+    }
+
+    .article-text{
+        margin-bottom: .5rem;
     }
 
     .article-image{
         height: auto;
+        margin: auto;
         max-width: 80%;
     }
 
