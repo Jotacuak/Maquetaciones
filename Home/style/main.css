@@ -2,6 +2,10 @@
 ======= Parte estructural ======
 ======================*/
 
+:root{
+    box-sizing: border-box;
+}
+
 body{
     background-color: hsl(308, 100%, 80%);
     display:flex; 
@@ -25,11 +29,6 @@ main{
 ====== Columns ======
 ======================*/
 
-.desktop-one-column{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .desktop-one-column .column{
     margin-bottom: 5%;
 }
@@ -50,6 +49,14 @@ main{
     width: 30%;
 }
 
+.desktop-four-column{
+    display: flex;
+}
+
+.desktop-four-column .column{
+    width: 24%;
+}
+
 .two-column-aside{
     display: flex;
 }
@@ -62,6 +69,14 @@ main{
     width: 80%;
 }
 
+.two-column{
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-column .column{
+    width: 45%;
+}
 
 /*====================
 ====== Tipografía ======
@@ -80,7 +95,7 @@ h5, h6, form, option{
     font-family: "Ubuntu Condensed";
 }
 
-a, td, p, button, label{
+a, td, p, button, label, input{
     font-family: "Ubuntu";
 }
 
@@ -90,9 +105,15 @@ h1 {
     text-decoration: none;
 }
 
-h2, h3 {
+h2{
     font-size: 2em;
     font-weight: 600;
+    text-decoration: none;
+}
+
+h3{
+    font-size: 1.7rem;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -122,6 +143,36 @@ a:focus, a:hover {
 
 img{
     max-width: 100%;
+}
+
+/*====================
+======== Especiales =========
+======================*/
+
+.orange p{
+    color: hsl(0, 100%, 50%);
+    font-size: 1.5rem ;
+}
+
+.italic p{
+    font-style: italic;
+    font-weight: 300;
+}
+
+.pink-button button{
+    background-color: hsl(293, 51%, 37%);
+    border: .2rem transparent;
+    border-radius: .25rem;
+    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 .5rem 1rem 0 rgba(0,0,0,0.19);
+    color: hsl(308, 100%, 80%);
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+
+.pink-button button:hover{
+    background-color: transparent;
+    box-shadow: 0 0 .2rem 0 hsl(293, 51%, 37%), 0 0 .2rem .1rem hsl(293, 51%, 37%);
+    color: hsl(293, 51%, 37%);
 }
 
 /* Header */
@@ -214,18 +265,9 @@ img{
 .slider-button button{
     background-color: hsl(308, 100%, 80%);
     border: .2rem solid hsl(293, 51%, 37%);
-    border-radius: .25rem;
     color: hsl(308, 100%, 80%);
-    cursor: pointer;
     padding: .5rem;
-    transition: all 150ms ease-in-out;
     padding: 0.25em 1em;
-}
-
-.slider-button button:hover {
-    background-color: transparent;
-    box-shadow: 0 0 .2rem 0 hsl(293, 51%, 37%), 0 0 .2rem .1rem hsl(293, 51%, 37%);
-    color: hsl(293, 51%, 37%);
 }
 
 .slider-text a{
@@ -350,22 +392,9 @@ img{
 }
 
 .contact-form-element-button button{
-    background-color: hsl(293, 51%, 37%);
-    border: .2rem transparent;
-    border-radius: .25rem;
-    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 .5rem 1rem 0 rgba(0,0,0,0.19);
-    color: hsl(308, 100%, 80%);
-    cursor: pointer;
     float: right;
     padding: .5rem;
-    transition: all 150ms ease-in-out;
     width: 20%;
-}
-
-.contact-form-element-button button:hover {
-    background-color: transparent;
-    box-shadow: 0 0 .2rem 0 hsl(293, 51%, 37%), 0 0 .2rem .1rem hsl(293, 51%, 37%);
-    color: hsl(293, 51%, 37%);
 }
 
 /* Gallery */
@@ -413,21 +442,8 @@ img{
 }
 
 .gallery-main-product-unit-info-button button{
-    background-color: hsl(293, 51%, 37%);
-    border: .2rem transparent;
-    border-radius: .25rem;
-    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 .5rem 1rem 0 rgba(0,0,0,0.19);
-    color: hsl(308, 100%, 80%);
-    cursor: pointer;
     padding: .5rem;
-    transition: all 150ms ease-in-out;
     width: 30%;
-}
-
-.gallery-main-product-unit-info-button button:hover{
-    background-color: transparent;
-    box-shadow: 0 0 .2rem 0 hsl(293, 51%, 37%), 0 0 .2rem .1rem hsl(293, 51%, 37%);
-    color: hsl(293, 51%, 37%);
 }
 
 /* Product file */
@@ -472,7 +488,7 @@ img{
     text-align: center;
 }
 
-.product-file-general-shop-amount-button input{
+.product-file-general-shop-amount-button input, .cart-main-info-element input{
     height: 1.5rem;
     width: 4rem;
     text-align: center;
@@ -489,25 +505,107 @@ img{
 }
 
 .product-file-general-shop-button button{
-    background-color: hsl(293, 51%, 37%);
-    border: .2rem transparent;
-    border-radius: .25rem;
-    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 .5rem 1rem 0 rgba(0,0,0,0.19);
-    color: hsl(308, 100%, 80%);
-    cursor: pointer;
     padding: .5rem 1rem;
-    transition: all 150ms ease-in-out;
-}
-
-.product-file-general-shop-button button:hover{
-    background-color: transparent;
-    box-shadow: 0 0 .2rem 0 hsl(293, 51%, 37%), 0 0 .2rem .1rem hsl(293, 51%, 37%);
-    color: hsl(293, 51%, 37%);
 }
 
 .product-file-general-shop-button svg{
     height: 2rem;
     width: 2rem;
+}
+
+
+/* Cart */
+
+.cart-main-title, .cart-main-total{
+    width: 100%;
+}
+
+.cart-main-title h2, .cart-main-total-txt-element-num p{
+    text-align: center;
+}
+
+main .cart-main{
+    margin: auto;
+    width: 90%;
+}
+
+.cart-main-info{
+    margin-top: 2rem;
+}
+
+.cart-main-total-txt{
+    width: 100%;
+}
+
+.cart-main-total-button button{
+    margin-top: .5rem;
+    padding: .5rem 1rem;
+}
+
+/* Checkout */
+
+.checkout-main-title h2{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.checkout-main-details-element h3, .checkout-main-order-title h3{
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.checkout-main-details{
+    margin-right: 1.5rem;
+}
+
+.checkout-main-details-element-label{
+    margin-bottom: .2rem;
+}
+
+.checkout-main-details-element-input input, select{
+    background-color: hsl(41, 100%, 88%);
+    border-radius: .25rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    padding: .2rem 0;
+    width: 100%;
+}
+
+.checkout-main-order-detail{
+    margin-bottom: 2rem;
+}
+
+.checkout-main-order-detail-element{
+    margin-bottom: 1.5rem;
+}
+
+.checkout-main-order-bank{
+    margin-bottom: 6.5rem;
+}
+
+.checkout-main-order-bank-element{
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.checkout-main-order-bank-element-input{
+    margin-right: .5rem;
+}
+
+.background{
+    background-color: hsl(41, 100%, 88%);
+    border-radius: .25rem;
+    padding: .5rem 0;
+}
+
+.checkout-main-order-check-element-button{
+    margin-top: 1rem;
+}
+
+.checkout-main-order-check-element-button button{
+    float: right;
+    margin-top: .5rem;
+    padding: .5rem 1rem;
 }
 
 /* Footer */
@@ -615,11 +713,40 @@ footer{
         width: 100%;
     }
 
+    .mobile-special-column{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mobile-special-column .column{
+        width: 100%;
+    }
+
+    .mobile-special-column .mobile-column-main{
+        width: 60%;
+    }
+
+    .mobile-special-column .mobile-column-aside{
+        width: 40%;
+    }
+
+    .mobile-column-aside{
+        margin-top: .2rem;
+    }
+
+    .mobile-none{
+        display: none;
+    }
+
     h1 {
         font-size: 2rem;
     }
     
-    h2{
+    h2, h3{
+        font-size: 1.5rem;
+    }
+
+    p{
         font-size: 1rem;
     }
 
@@ -714,7 +841,37 @@ footer{
     .gallery-main-list-stock{
         display: none;
     }
-        
+     
+    .product-file-general-info-title{
+        margin-right: 1rem;
+    }
+
+    .product-file-general-info-title p{
+        font-size: 1.5rem;
+    }
+
+    .product-file-general-shop-button{
+        margin-right: 1.5rem;
+    }
+
+    .mobile-column-aside p{
+        margin-right: 2rem;
+        text-align: center;
+    }
+
+    .cart-main{
+        padding-left: 2.5rem;
+    }
+    
+    .cart-main-title h2{
+        font-size: 1.7rem;
+        padding-right: 3.5rem;
+    }
+
+    .cart-main-total{
+        margin-top: 1rem;
+    }
+
     .copyright{
         margin: 1em 0;
     }
