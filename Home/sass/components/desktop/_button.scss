@@ -1,0 +1,15 @@
+.pink-button button{
+    background-color: hsl(293, 51%, 37%);
+    border: .2rem transparent;
+    border-radius: .25rem;
+    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2), 0 .5rem 1rem 0 rgba(0,0,0,0.19);
+    color: hsl(308, 100%, 80%);
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+
+    &:hover{
+        background-color: transparent;
+        box-shadow: 0 0 .2rem 0 hsl(293, 51%, 37%), 0 0 .2rem .1rem hsl(293, 51%, 37%);
+        color: hsl(293, 51%, 37%);
+    }
+}

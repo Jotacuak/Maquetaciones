@@ -160,6 +160,13 @@ img{
 /*====================
 ======== Specials =========
 ======================*/
+.red{
+    margin-bottom: .5rem;
+}
+
+.red p{
+    color: hsl(0, 100%, 50%);
+}
 
 .orange p{
     color: hsl(0, 100%, 50%);
@@ -217,6 +224,8 @@ img{
     text-align: left;
 }
 
+/* Hamburger menu */
+
 .menu{
     margin: auto 0;
 }
@@ -249,7 +258,6 @@ img{
 .hamburguer path{
     fill: hsl(180, 5%, 25%);
 }
-
 /* Slider */
 
 .slider{
@@ -444,15 +452,15 @@ img{
 }
 
 .gallery-main-product-unit{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-main-product-unit-img{
+    margin-bottom: .5rem;
 }
 
 .gallery-main-product-unit-info-name, .red{
     margin-bottom: .5rem;
-}
-
-.red p{
-    color: hsl(0, 100%, 50%);
 }
 
 .gallery-main-product-unit-info-button button{
@@ -498,7 +506,7 @@ img{
     border-radius: .25rem;
     color: hsl(0, 0%, 100%);
     padding: .3rem;
-    border: .1rem solid hsl(0, 0%, 87%);
+    border: .1rem solid hsl(180, 5%, 25%);
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -509,7 +517,8 @@ img{
     width: 4rem;
     text-align: center;
     font-size: 1rem;
-    border: .1rem solid hsl(0, 0%, 87%);
+    background-color: hsl(41, 100%, 88%);
+    border: .1rem solid hsl(180, 5%, 25%);
     border-radius: .25rem;
     display: inline-block;
     vertical-align: middle;
@@ -529,6 +538,10 @@ img{
     width: 2rem;
 }
 
+.product-file-general-shop-button svg path{
+    fill: hsl(308, 100%, 80%);
+}
+
 
 /*====================
 ======== Cart =========
@@ -542,7 +555,7 @@ img{
     text-align: center;
 }
 
-main .cart-main{
+.cart-main{
     margin: auto;
     width: 90%;
 }
@@ -868,7 +881,7 @@ footer{
     .gallery-main-list-stock{
         display: none;
     }
-     
+
     .product-file-general-info-title{
         margin-right: 1rem;
     }

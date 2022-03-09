@@ -1,0 +1,42 @@
+.slider{
+    margin-bottom: 1rem;
+
+    .slider-image{
+        position: relative;
+        z-index: 1000;
+    }
+
+    .slider-title{
+        position: absolute;
+        left: 20%;
+        top: 30%;
+        z-index: 1001;
+    }
+
+    .slider-button{
+        position: absolute;
+        left: 20%;
+        top: 36%;
+        z-index: 1001;
+    
+        button{
+            padding: .5rem 1rem;
+        }
+    }
+
+    .slider-text a{
+        a{
+            z-index: 1001;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
