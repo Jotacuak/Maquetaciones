@@ -9,7 +9,7 @@
 
     &:hover{
         background-color: transparent;
-        box-shadow: 0 0 .2rem 0 $button-text-hover, 0 0 .2rem .1rem $button-text-hover;
-        color: $button-shadow-hover;
+        box-shadow: 0 0 .2rem 0 $button-shadow-hover, 0 0 .2rem .1rem $button-shadow-hover;
+        color: $secondary-color;
     }
 }

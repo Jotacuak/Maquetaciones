@@ -1,0 +1,32 @@
+.menu{
+    margin: auto 0;
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem 0;
+
+        li{
+            margin: 1rem;
+
+            a{
+                color: $text-primary-color;
+                font-family: $font-secondary;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.hamburguer{
+    display: none;
+
+    svg{
+        height: 2rem;
+        width: 2rem;
+
+        path{
+            fill: $svg-color;
+        }
+    }
+}

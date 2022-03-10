@@ -1,0 +1,34 @@
+.featured-title{
+    width: 100%;
+
+    h3{
+        text-align: center;
+    }
+}
+
+.featured-element{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.5rem;
+
+    .featured-element-image{
+        height: 18vh;
+        overflow: hidden;
+    }
+
+    .featured-element-text{
+        width: 100%;   
+        
+        p{
+            padding: 10% 0;
+            text-align: center;
+        }
+    }
+}
+
+.featured-images{
+    display: flex;
+    justify-content: space-between;
+}
+

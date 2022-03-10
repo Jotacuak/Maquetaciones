@@ -1,0 +1,22 @@
+.article{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: auto;
+    width: 100%;
+
+    p{
+        padding: 0;
+        text-align: center;
+    }
+
+    .article-text{
+        margin-bottom: .5rem;
+    }
+
+    .article-image{
+        height: auto;
+        margin: auto;
+        max-width: 80%;
+    }
+}
