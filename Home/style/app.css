@@ -838,6 +838,9 @@ footer {
   height: 2rem;
   width: 2rem;
 }
+.product-file-general .product-file-general-shop-button button svg path {
+  fill: #ff99f1;
+}
 
 .article {
   display: flex;
@@ -945,6 +948,32 @@ footer {
   background-color: transparent;
   box-shadow: 0 0 0.2rem 0 #832e8e, 0 0 0.2rem 0.1rem #832e8e;
   color: #832e8e;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: 1s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-30px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(-15px);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

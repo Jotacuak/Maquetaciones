@@ -11,5 +11,6 @@
         background-color: transparent;
         box-shadow: 0 0 .2rem 0 $button-text-hover, 0 0 .2rem .1rem $button-text-hover;
         color: $button-shadow-hover;
+        @include bounceX(1s,1s)
     }
 }
