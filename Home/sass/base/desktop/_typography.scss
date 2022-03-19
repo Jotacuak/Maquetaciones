@@ -1,0 +1,94 @@
+/*====================
+======Typography======
+======================*/
+
+// @font-face {
+//     font-family: 'Ubuntu';
+//     font-display: auto;
+//     src: url('/front/fonts/Ubuntu-Regular.ttf') format('ttf');
+// }
+
+// @font-face {
+//     font-family: 'Ubuntu';
+//     font-display: auto;
+//     font-weight: bold;
+//     src: url('/front/fonts/Ubuntu-Bold.ttf') format('ttf');
+// }
+
+// @font-face {
+//     font-family: 'Ubuntu Condensed';
+//     font-display: auto;
+//     src: url('/front/fonts/Ubuntu-Light.ttf') format('ttf');
+// }
+
+h1, h2, h3, h4, h5, h6, a, p, label{
+    color: $text-primary-color;
+}
+
+h1, h2, h3, h4 {
+    font-family: $font-primary;
+}
+
+h5, h6, form, option{
+    font-family: $font-secondary;
+}
+
+a, td, p, button, label, input{
+    font-family: $font-primary;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h3{
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+h4{
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 300ms;
+
+    &:hover, &:focus {
+        outline: none;
+        text-decoration: none;
+        outline-offset: 0;
+    }
+}
+
+.red{
+    margin-bottom: .5rem;
+
+    p{
+        color: hsl(0, 100%, 50%);
+    }
+}
+
+.orange p{
+    color: hsl(0, 100%, 50%);
+    font-size: 1.5rem ;
+}
+
+.italic p{
+    font-style: italic;
+    font-weight: 300;
+}

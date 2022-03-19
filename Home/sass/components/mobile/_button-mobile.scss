@@ -1,0 +1,15 @@
+.pink-button button{
+    background-color: $button-color;
+    border: .2rem transparent;
+    border-radius: .25rem;
+    box-shadow: 0 .5rem 1rem 0 $button-shadow, 0 .5rem 1rem 0 $button-shadow;
+    color: $button-text;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+
+    &:hover{
+        background-color: transparent;
+        box-shadow: 0 0 .2rem 0 $button-shadow-hover, 0 0 .2rem .1rem $button-shadow-hover;
+        color: $secondary-color;
+    }
+}

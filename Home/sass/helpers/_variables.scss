@@ -1,0 +1,32 @@
+//z-index
+
+$z-index-home: 997;
+$z-index-slider-img: 999;
+$z-index-slider-filter: 1000;
+$z-index-slider-title: 1001;
+$z-index-slider-description: 1001;
+$z-index-slider-button: 1001;
+$z-index-microfeatured-title: 2001;
+$z-index-footer: 2001;
+$z-index-header-bar: 2001;
+$z-index-header-fixed: 2001;
+$z-index-logo: 2002;
+$z-index-bar: 4000;
+$z-index-form: 5000;
+$z-index-overlay: 5001;
+$z-index-spinner: 5002;
+
+//typography
+$font-primary: "Ubuntu", sans-serif;
+$font-secondary: "Ubuntu Condensed";
+
+//colors
+$primary-color: hsl(308, 100%, 80%);
+$secondary-color: hsl(293, 51%, 37%);
+$text-primary-color: hsl(180, 5%, 25%);
+$button-color: $secondary-color;
+$button-text: $primary-color;
+$button-shadow: hsla(0, 0%, 0%, 0.2);
+$button-text-hover: $secondary-color;
+$button-shadow-hover: $secondary-color;
+$svg-color: $text-primary-color;

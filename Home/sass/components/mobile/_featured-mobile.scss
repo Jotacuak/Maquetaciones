@@ -1,0 +1,37 @@
+.featured-title{
+    width: 100%;
+
+    h3{
+        text-align: center;
+    }
+}
+
+.featured-element{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0.5rem;
+
+    .featured-element-image{
+        height: auto;
+        overflow: hidden;
+    }
+
+    .featured-element-text{
+        width: 100%;   
+        
+        p{
+            padding: 10% 0;
+            text-align: center;
+        }
+    }
+}
+
+.featured-images{
+    display: flex;
+    flex-direction: column;
+    margin: 0.2rem;
+
+    p{
+        text-align: center;
+    }
+}

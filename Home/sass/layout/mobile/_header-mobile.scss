@@ -1,0 +1,43 @@
+/*====================
+========Header========
+======================*/
+
+header{
+	border-bottom: .5rem solid $secondary-color;
+	border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+	.title{
+		padding-left: 2rem;	
+	}
+}
+
+.logo-title{
+    display: flex;
+    margin: auto 0;
+}
+
+.logo{
+	height: max-content;
+    width: max-content;
+
+	svg{
+		height: 2rem;
+		width: 2rem;
+
+		path{
+			fill: $svg-color;
+		}
+	}
+}
+
+.title{
+	height: max-content;
+    margin-left: .5em;
+	
+	h1{
+		text-align: left;
+	}
+}

@@ -4,11 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="images/favicon.ico">
-		<title>La Lloreria</title>
+		<title>Lágrimas de gamer | La Lloreria</title>
 		<meta name="description" content="descripción de la web, se recomienda 90 caracteres">
         <meta name="keywords" 	 content="palabras clave, separadas, por comas">
-        <link rel="stylesheet" href="style/normalize.css" >
-        <link rel="stylesheet" href="style/main.css" >
+        <!-- <link rel="stylesheet" href="style/normalize.css"> -->
+        <link rel="stylesheet" href="style/app.css" >
+        <script src="js/main.js"></script>
     </head>
 
     <body>
@@ -21,24 +22,24 @@
                 </div>
 
                 <div class="title">
-                    <h1>La Lloreria</h1>
+                    <a href="index.html">
+                        <h1>La Lloreria</h1>
+                    </a>
                 </div>
-            </div>
-
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Esto</a></li>
-                    <li><a href="#">Es</a></li>
-                    <li><a href="#">Un</a></li>
-                    <li><a href="#">Menu</a></li>
-                </ul>
             </div>
 
             <div class="hamburguer">
                 <svg viewBox="0 0 24 24">
                     <path fill="currentColor" d="M22 13C22 14.11 21.11 15 20 15H4C2.9 15 2 14.11 2 13S2.9 11 4 11H13L15.5 13L18 11H20C21.11 11 22 11.9 22 13M12 3C3 3 3 9 3 9H21C21 9 21 3 12 3M3 18C3 19.66 4.34 21 6 21H18C19.66 21 21 19.66 21 18V17H3V18Z" />
                 </svg>
-            </div>
+            </div>  
+            <div class="menu">
+                <ul>
+                    <li><a href="gallery.html">Productos</a></li>
+                    <li><a href="cart.html">Carrito</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div> 
             
         </header>
         
@@ -90,25 +91,27 @@
                                         <div class="product-file-general-shop-amount-txt">
                                             <p>Cantidad</p>
                                         </div>
-                                        <div class="product-file-general-shop-amount-button">
+                                        <div class="product-file-general-shop-amount-button pink-button">
                                             <span class="minus">-</span>
                                             <input type="text" value="1"/>
                                             <span class="plus">+</span>
                                         </div>
                                     </div>
                                     <div class="product-file-general-shop-button">
-                                        <div class="product-file-general-shop-button-cart">
+                                        <div class="product-file-general-shop-button-cart pink-button">
                                             <button title="Añadir al carro">
                                                 <svg viewBox="0 0 24 24">
                                                     <path fill="currentColor" d="M11,9H13V6H16V4H13V1H11V4H8V6H11M7,18A2,2 0 0,0 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20A2,2 0 0,0 7,18M17,18A2,2 0 0,0 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20A2,2 0 0,0 17,18M7.17,14.75L7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.59 17.3,11.97L21.16,4.96L19.42,4H19.41L18.31,6L15.55,11H8.53L8.4,10.73L6.16,6L5.21,4L4.27,2H1V4H3L6.6,11.59L5.25,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42C7.29,15 7.17,14.89 7.17,14.75Z" />
                                                 </svg>
                                             </button>
                                         </div>
-                                        <div class="product-file-general-shop-button-buy">
+                                        <div class="product-file-general-shop-button-buy pink-button">
                                             <button title="Compra ahora">
-                                                <svg viewBox="0 0 24 24">
-                                                    <path fill="currentColor" d="M15 10C15 9.45 15.45 9 16 9C16.55 9 17 9.45 17 10S16.55 11 16 11 15 10.55 15 10M8 9H13V7H8V9M22 7.5V14.47L19.18 15.41L17.5 21H12V19H10V21H4.5C4.5 21 2 12.54 2 9.5S4.46 4 7.5 4H12.5C13.41 2.79 14.86 2 16.5 2C17.33 2 18 2.67 18 3.5C18 3.71 17.96 3.9 17.88 4.08C17.74 4.42 17.62 4.81 17.56 5.23L19.83 7.5H22M20 9.5H19L15.5 6C15.5 5.35 15.59 4.71 15.76 4.09C14.79 4.34 14 5.06 13.67 6H7.5C5.57 6 4 7.57 4 9.5C4 11.38 5.22 16.15 6 19H8V17H14V19H16L17.56 13.85L20 13.03V9.5Z" />
-                                                </svg>
+                                                <a href="cart.html">
+                                                    <svg viewBox="0 0 24 24">
+                                                        <path fill="currentColor" d="M15 10C15 9.45 15.45 9 16 9C16.55 9 17 9.45 17 10S16.55 11 16 11 15 10.55 15 10M8 9H13V7H8V9M22 7.5V14.47L19.18 15.41L17.5 21H12V19H10V21H4.5C4.5 21 2 12.54 2 9.5S4.46 4 7.5 4H12.5C13.41 2.79 14.86 2 16.5 2C17.33 2 18 2.67 18 3.5C18 3.71 17.96 3.9 17.88 4.08C17.74 4.42 17.62 4.81 17.56 5.23L19.83 7.5H22M20 9.5H19L15.5 6C15.5 5.35 15.59 4.71 15.76 4.09C14.79 4.34 14 5.06 13.67 6H7.5C5.57 6 4 7.57 4 9.5C4 11.38 5.22 16.15 6 19H8V17H14V19H16L17.56 13.85L20 13.03V9.5Z" />
+                                                    </svg>
+                                                </a>
                                             </button>
                                         </div>
                                     </div>
