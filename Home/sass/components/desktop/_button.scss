@@ -1,4 +1,5 @@
-.pink-button button{
+.pink-button{
+
     background-color: $button-color;
     border: .2rem transparent;
     border-radius: .25rem;
@@ -7,10 +8,10 @@
     cursor: pointer;
     transition: all 150ms ease-in-out;
 
+
     &:hover{
         background-color: transparent;
         box-shadow: 0 0 .2rem 0 $button-text-hover, 0 0 .2rem .1rem $button-text-hover;
         color: $button-shadow-hover;
-        @include bounceX(1s,1s)
     }
 }
