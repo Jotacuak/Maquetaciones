@@ -39,176 +39,175 @@
         </header>        
         <main>
             <div class="checkout-main">
-                <div class="desktop-one-column">
-                    <div class="checkout-main-title mobile-none">
-                        <h2>Checkout</h2>
-                    </div>
-                    <div class="desktop-two-column mobile-one-column">
-                        <div class="column">
-                            <div class="checkout-main-details">
-                                <div class="checkout-main-details-element">
-                                    <h3>Detalles de facturación</h3>
-                                </div>
-                                <div class="two-column mobile-one-column">
-                                    <div class="column">
-                                        <div class="checkout-main-details-element">
-                                            <div class="checkout-main-details-element-label">
-                                                <label for="">Nombre:</label>
-                                            </div>
-                                            <div class="checkout-main-details-element-input">
-                                                <input type="text">
+                <form id="checkout-form">
+                    <div class="desktop-one-column">
+                        <div class="checkout-main-title mobile-none">
+                            <h2>Checkout</h2>
+                        </div>
+                        <div class="desktop-two-column mobile-one-column">
+                            <div class="column">
+                                <div class="checkout-main-details">
+                                    <div class="checkout-main-details-element">
+                                        <h3>Detalles de facturación</h3>
+                                    </div>
+                                    <div class="two-column mobile-one-column">
+                                        <div class="column">
+                                            <div class="checkout-main-details-element">
+                                                <div class="checkout-main-details-element-label">
+                                                    <label for="">Nombre:</label>
+                                                </div>
+                                                <div class="checkout-main-details-element-input">
+                                                    <input name="name" type="text" id="name">
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="column">
+                                            <div class="checkout-main-details-element">
+                                                <div class="checkout-main-details-element-label">
+                                                    <label for="">Apellidos:</label>
+                                                </div>
+                                                <div class="checkout-main-details-element-input">
+                                                    <input name="surname" type="text">
+                                                </div>
+                                            </div>
+                                        </div>                                    
                                     </div>
-                                    <div class="column">
-                                        <div class="checkout-main-details-element">
-                                            <div class="checkout-main-details-element-label">
-                                                <label for="">Apellidos:</label>
-                                            </div>
-                                            <div class="checkout-main-details-element-input">
-                                                <input type="text">
-                                            </div>
+                                    <div class="checkout-main-details-element">
+                                        <div class="checkout-main-details-element-label">
+                                            <label for="">Nombre de la empresa (opcional):</label>
                                         </div>
-                                    </div>                                    
-                                </div>
-                                <div class="checkout-main-details-element">
-                                    <div class="checkout-main-details-element-label">
-                                        <label for="">Nombre de la empresa (opcional):</label>
+                                        <div class="checkout-main-details-element-input">
+                                            <input name="corporation" type="text"> 
+                                        </div>
                                     </div>
-                                    <div class="checkout-main-details-element-input">
-                                        <input type="text"> 
-                                    </div>
-                                </div>
-                                <div class="checkout-main-details-element">
-                                    <div class="checkout-main-details-element-label">
+                                    <div class="checkout-main-details-element">
+                                        <div class="checkout-main-details-element-label">
                                             <label for="">Dirección de la calle:</label>
                                         </div>
-                                    <div class="checkout-main-details-element-input">
-                                        <input type="text">
-                                        <input type="text">
+                                        <div class="checkout-main-details-element-input">
+                                            <input name="address" type="text">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="checkout-main-details-element">
-                                    <div class="checkout-main-details-element-label">
-                                        <label for="">Localidad/Ciudad:</label>
+                                    <div class="checkout-main-details-element">
+                                        <div class="checkout-main-details-element-label">
+                                            <label for="">Localidad/Ciudad:</label>
+                                        </div>
+                                        <div class="checkout-main-details-element-input">
+                                            <input name="city" type="text">
+                                        </div>
                                     </div>
-                                    <div class="checkout-main-details-element-input">
-                                        <input type="text">
+                                    <div class="checkout-main-details-element">
+                                        <div class="checkout-main-details-element-label">
+                                            <label for="">Región/Provincia:</label>
+                                        </div>
+                                        <div class="checkout-main-details-element-input">
+                                            <select name="location">
+                                                <option>Illes Balears</option>
+                                                <option>Islas Canarias</option>
+                                                <option>Cataluña</option>
+                                                <option>Andalucia</option>
+                                                <option>Castilla y Leon</option>
+                                                <option>Castilla la Mancha</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="checkout-main-details-element">
-                                    <div class="checkout-main-details-element-label">
-                                        <label for="">Región/Provincia:</label>
+                                    <div class="checkout-main-details-element">
+                                        <div class="checkout-main-details-element-label">
+                                            <label for="">Código postal:</label>
+                                        </div>
+                                        <div class="checkout-main-details-element-input">
+                                            <input name="postal_code" type="text">
+                                        </div>
                                     </div>
-                                    <div class="checkout-main-details-element-input">
-                                        <select>
-                                            <option>Illes Balears</option>
-                                            <option>Islas Canarias</option>
-                                            <option>Cataluña</option>
-                                            <option>Andalucia</option>
-                                            <option>Castilla y Leon</option>
-                                            <option>Castilla la Mancha</option>
-                                        </select>
+                                    <div class="checkout-main-details-element">
+                                        <div class="checkout-main-details-element-label">
+                                            <label for="">Teléfono:</label>
+                                        </div>
+                                        <div class="checkout-main-details-element-input">
+                                            <input name="mobile_phone" type="number">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="checkout-main-details-element">
-                                    <div class="checkout-main-details-element-label">
-                                        <label for="">Código postal:</label>
-                                    </div>
-                                    <div class="checkout-main-details-element-input">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="checkout-main-details-element">
-                                    <div class="checkout-main-details-element-label">
-                                        <label for="">Teléfono:</label>
-                                    </div>
-                                    <div class="checkout-main-details-element-input">
-                                        <input type="number">
-                                    </div>
-                                </div>
-                                <div class="checkout-main-details-element">
-                                    <div class="checkout-main-details-element-label">
-                                        <label for="">Correo electrónico:</label>
-                                    </div>
-                                    <div class="checkout-main-details-element-input">
-                                        <input type="text">
+                                    <div class="checkout-main-details-element">
+                                        <div class="checkout-main-details-element-label">
+                                            <label for="">Correo electrónico:</label>
+                                        </div>
+                                        <div class="checkout-main-details-element-input">
+                                            <input name="email" type="text" id="email">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="column">
-                            <div class="checkout-main-order">
-                                <div class="checkout-main-order-title">
-                                    <h3>Tu pedido</h3>
-                                </div>
-                                <div class="checkout-main-order-detail">
-                                    <div class="two-column">
-                                        <div class="column">
-                                            <div class="checkout-main-order-detail-element">
-                                                <p>Product</p>
+                            <div class="column">
+                                <div class="checkout-main-order">
+                                    <div class="checkout-main-order-title">
+                                        <h3>Tu pedido</h3>
+                                    </div>
+                                    <div class="checkout-main-order-detail">
+                                        <div class="two-column">
+                                            <div class="column">
+                                                <div class="checkout-main-order-detail-element">
+                                                    <p>Product</p>
+                                                </div>
+                                                <div class="checkout-main-order-detail-element italic">
+                                                    <p>Lágrimas x 1</p>
+                                                </div>
+                                                <div class="checkout-main-order-detail-element">
+                                                    <p>Subtotal</p>
+                                                </div>
+                                                <div class="checkout-main-order-detail-element">
+                                                    <p>Total</p>
+                                                </div>
                                             </div>
-                                            <div class="checkout-main-order-detail-element italic">
-                                                <p>Lágrimas x 1</p>
-                                            </div>
-                                            <div class="checkout-main-order-detail-element">
-                                                <p>Subtotal</p>
-                                            </div>
-                                            <div class="checkout-main-order-detail-element">
-                                                <p>Total</p>
+                                            <div class="column">
+                                                <div class="checkout-main-order-detail-element">
+                                                    <p>Subtotal</p>
+                                                </div>
+                                                <div class="checkout-main-order-detail-element">
+                                                    <p>510€</p>
+                                                </div>
+                                                <div class="checkout-main-order-detail-element">
+                                                    <p>510€</p>
+                                                </div>
+                                                <div class="checkout-main-order-detail-element">
+                                                    <p>510€</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="column">
-                                            <div class="checkout-main-order-detail-element">
-                                                <p>Subtotal</p>
+                                    </div>                                
+                                    <div class="checkout-main-order-bank">
+                                        <div class="checkout-main-order-bank-element">
+                                            <div class="checkout-main-order-bank-element-input">
+                                                <input type="checkbox" name="payment_method">
                                             </div>
-                                            <div class="checkout-main-order-detail-element">
-                                                <p>510€</p>
+                                            <div class="checkout-main-order-bank-element-label">
+                                                <p>Transferencia bancaria</p>
                                             </div>
-                                            <div class="checkout-main-order-detail-element">
-                                                <p>510€</p>
+                                        </div>
+                                        <div class="checkout-main-order-bank-element italic background">
+                                            <p>Realiza tu pago directamente en nuestra cuenta bancaria. Utilice su ID de pedido como referencia de pago. Su pedido no se enviará hasta se haya realizado la transferencia en nuestra cuenta</p>
+                                        </div>
+                                        <div class="checkout-main-order-bank-element">
+                                            <div class="checkout-main-order-bank-element-input">
+                                                <input type="checkbox" name="payment_method">
                                             </div>
-                                            <div class="checkout-main-order-detail-element">
-                                                <p>510€</p>
+                                            <div class="checkout-main-order-bank-element-label">
+                                                <p>PayPal</p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>                                
-                                <div class="checkout-main-order-bank">
-                                    <div class="checkout-main-order-bank-element">
-                                        <div class="checkout-main-order-bank-element-input">
-                                            <input type="checkbox">
+                                    <div class="checkout-main-order-check">
+                                        <div class="checkout-main-order-check-element-txt italic background">
+                                            <p>Sus datos personales se utilizarán para procesar su pedido, respaldar su experiencia en este sitio web y para otros fines descritos en nuestra política de privacidad.</p>
                                         </div>
-                                        <div class="checkout-main-order-bank-element-label">
-                                            <p>Transferencia bancaria</p>
+                                        <div class="checkout-main-order-check-element-button">
+                                            <button class="pink-button submitButton">Realiza el pedido</button>                                     
                                         </div>
-                                    </div>
-                                    <div class="checkout-main-order-bank-element italic background">
-                                        <p>Realiza tu pago directamente en nuestra cuenta bancaria. Utilice su ID de pedido como referencia de pago. Su pedido no se enviará hasta se haya realizado la transferencia en nuestra cuenta</p>
-                                    </div>
-                                    <div class="checkout-main-order-bank-element">
-                                        <div class="checkout-main-order-bank-element-input">
-                                            <input type="checkbox">
-                                        </div>
-                                        <div class="checkout-main-order-bank-element-label">
-                                            <p>PayPal</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="checkout-main-order-check">
-                                    <div class="checkout-main-order-check-element-txt italic background">
-                                        <p>Sus datos personales se utilizarán para procesar su pedido, respaldar su experiencia en este sitio web y para otros fines descritos en nuestra política de privacidad.</p>
-                                    </div>
-                                    <div class="checkout-main-order-check-element-button">
-                                        <a href="https://youtu.be/kvhUNv59XdY">
-                                            <button class="pink-button">Realiza el pedido</button>
-                                        </a>                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </main>
         <footer>
@@ -219,7 +218,7 @@
                 <a href="https://youtu.be/kvhUNv59XdY"><p>Himno popular</p></a>
             </div>
         </footer>
-        <script src="js/main.js"></script>
+        <script type="module" src="js/app.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>
             WebFont.load({
