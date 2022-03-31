@@ -2,8 +2,8 @@ import JustValidate from '../../node_modules/just-validate/dist/just-validate.es
 
 export let validador = (form) => {
     
-    let validate = new JustValidate('#' + form.id,
-        {
+    let errorContainer = document.getElementById('errors-container');
+    let validate = new JustValidate('#' + form.id, {
             errorFieldCssClass: 'is-invalid',
             errorLabelStyle: {
                 color: 'red',
@@ -11,11 +11,15 @@ export let validador = (form) => {
             },
             focusInvalidField: true,
             lockForm: true,
-            errorContainer: '#errors-container',
-        });
+            errorContainer: 'errorContainer',
+    });
     
     validate
     .addField('#name', [
+        {
+            rule: 'required',
+            errorMessage: 'Name is invalid!',
+        },
         {
             rule: 'minLength',
             value: 3,
@@ -28,7 +32,7 @@ export let validador = (form) => {
     .addField('#email', [
         {
             rule: 'required',
-            errorMessage: 'Email is required',
+            errorMessage: 'Email is required!',
         },
         {
             rule: 'email',

@@ -1,5 +1,4 @@
 import {validador} from './validator.js';
-
 export let renderForm = () => {
 
     let buttonSubmit = document.querySelector('.submitButton');
@@ -22,6 +21,7 @@ export let renderForm = () => {
                 });
 
                 validate.onFail(() => {
+        
                 });                
             });
         });
