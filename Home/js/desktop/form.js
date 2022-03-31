@@ -14,7 +14,7 @@ export let renderForm = () => {
 
                 validate.onSuccess (() => {
                 
-                    let formData = new FormData
+                    let formData = new FormData(form);
 
                     for (let pair of formData.entries()){
                         console.log(pair[0] + ', ' + pair[1])

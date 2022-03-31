@@ -17,10 +17,6 @@ export let validador = (form) => {
     validate
     .addField('#name', [
         {
-            rule: 'required',
-            errorMessage: 'Mínimo 3 caracteres'
-        },
-        {
             rule: 'minLength',
             value: 3,
         },
