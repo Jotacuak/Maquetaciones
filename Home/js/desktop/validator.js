@@ -1,37 +1,44 @@
 import JustValidate from '../../node_modules/just-validate/dist/just-validate.es.js';
 
-export let validador = () => {
+export let validador = (form) => {
     
-    let buttonSubmit = document.querySelector('.submitButton');
-    let formInputs = document.querySelectorAll('input');
+    let validate = new JustValidate('#' + form.id,
+        {
+            errorFieldCssClass: 'is-invalid',
+            errorLabelStyle: {
+                color: 'red',
+                fontsize: '14px',
+            },
+            focusInvalidField: true,
+            lockForm: true,
+            errorContainer: '#errors-container',
+        });
+    
+    validate
+    .addField('#name', [
+        {
+            rule: 'required',
+            errorMessage: 'Mínimo 3 caracteres'
+        },
+        {
+            rule: 'minLength',
+            value: 3,
+        },
+        {
+            rule: 'maxLength',
+            value: 30,
+        },
+    ])
+    .addField('#email', [
+        {
+            rule: 'required',
+            errorMessage: 'Email is required',
+        },
+        {
+            rule: 'email',
+            errorMessage: 'Email is invalid!',
+        },
+    ]);
 
-    buttonSubmit.addEventListener("click", () => {
-
-        let validate = new JustValidate('#checkout-form');
-        
-        validate.addField('#name', [
-            {
-                rule: 'required',
-                errorMessage: 'Mínimo 3 caracteres'
-            },
-            {
-                rule: 'minLength',
-                value: 3,
-            },
-            {
-                rule: 'maxLength',
-                value: 30,
-            },
-        ])
-        .addField('#email', [
-            {
-                rule: 'required',
-                errorMessage: 'Email is required',
-            },
-            {
-                rule: 'email',
-                errorMessage: 'Email is invalid!',
-            },
-        ]);
-    });
+    return validate;
 };

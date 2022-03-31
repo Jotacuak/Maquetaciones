@@ -1,8 +1,6 @@
 import {plusMinus} from './desktop/plusminus.js';
-// import {validador} from './desktop/validator.js';
-import {form} from './desktop/form.js';
+import {renderForm} from './desktop/form.js';
 
 
 plusMinus();
-// validador();
-form();
+renderForm();

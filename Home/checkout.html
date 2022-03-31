@@ -39,7 +39,8 @@
         </header>        
         <main>
             <div class="checkout-main">
-                <form enctype="multipart/form-data" id="checkout-form" name="sql_file">
+                <form enctype="multipart/form-data" class="front-form" id="checkout-form" name="sql_file">
+                    <div id="errors-container"></div>
                     <div class="desktop-one-column">
                         <div class="checkout-main-title mobile-none">
                             <h2>Checkout</h2>
@@ -57,7 +58,7 @@
                                                     <label for="">Nombre:</label>
                                                 </div>
                                                 <div class="checkout-main-details-element-input">
-                                                    <input name="name" type="text" id="name">
+                                                    <input class="required" name="name" type="text" id="name">
                                                 </div>
                                             </div>
                                         </div>
@@ -67,7 +68,7 @@
                                                     <label for="">Apellidos:</label>
                                                 </div>
                                                 <div class="checkout-main-details-element-input">
-                                                    <input name="surname" type="text">
+                                                    <input class="required" name="surname" type="text" id="surname">
                                                 </div>
                                             </div>
                                         </div>                                    
@@ -77,7 +78,7 @@
                                             <label for="">Nombre de la empresa (opcional):</label>
                                         </div>
                                         <div class="checkout-main-details-element-input">
-                                            <input name="corporation" type="text"> 
+                                            <input class="required" name="corporation" type="text" id="corporation"> 
                                         </div>
                                     </div>
                                     <div class="checkout-main-details-element">
@@ -85,7 +86,7 @@
                                             <label for="">Dirección de la calle:</label>
                                         </div>
                                         <div class="checkout-main-details-element-input">
-                                            <input name="address" type="text">
+                                            <input class="required" name="address" type="text" id="address">
                                         </div>
                                     </div>
                                     <div class="checkout-main-details-element">
@@ -93,7 +94,7 @@
                                             <label for="">Localidad/Ciudad:</label>
                                         </div>
                                         <div class="checkout-main-details-element-input">
-                                            <input name="city" type="text">
+                                            <input class="required" name="city" type="text" id="city">
                                         </div>
                                     </div>
                                     <div class="checkout-main-details-element">
@@ -101,7 +102,7 @@
                                             <label for="">Región/Provincia:</label>
                                         </div>
                                         <div class="checkout-main-details-element-input">
-                                            <select name="location">
+                                            <select class="required" name="location" id="location">
                                                 <option>Illes Balears</option>
                                                 <option>Islas Canarias</option>
                                                 <option>Cataluña</option>
@@ -116,7 +117,7 @@
                                             <label for="">Código postal:</label>
                                         </div>
                                         <div class="checkout-main-details-element-input">
-                                            <input name="postal_code" type="text">
+                                            <input class="required" name="postal_code" type="text" id="postal_code">
                                         </div>
                                     </div>
                                     <div class="checkout-main-details-element">
@@ -124,7 +125,7 @@
                                             <label for="">Teléfono:</label>
                                         </div>
                                         <div class="checkout-main-details-element-input">
-                                            <input name="mobile_phone" type="number">
+                                            <input class="required" name="mobile_phone" type="number" id="mobile_phone">
                                         </div>
                                     </div>
                                     <div class="checkout-main-details-element">
@@ -132,7 +133,7 @@
                                             <label for="">Correo electrónico:</label>
                                         </div>
                                         <div class="checkout-main-details-element-input">
-                                            <input name="email" type="text" id="email">
+                                            <input class="required" name="email" type="text" id="email">
                                         </div>
                                     </div>
                                 </div>
