@@ -2,7 +2,6 @@ import JustValidate from '../../node_modules/just-validate/dist/just-validate.es
 
 export let validador = (form) => {
     
-    let errorContainer = document.getElementById('errors-container');
     let validate = new JustValidate('#' + form.id, {
             errorFieldCssClass: 'is-invalid',
             errorLabelStyle: {
@@ -11,7 +10,7 @@ export let validador = (form) => {
             },
             focusInvalidField: true,
             lockForm: true,
-            errorContainer: 'errorContainer',
+            errorContainer: '#errors-container',
     });
     
     validate

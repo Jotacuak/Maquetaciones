@@ -1,23 +1,18 @@
-import ClassicEditor from './../../../build/editor-classic.js';
+import '../../node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js';
 
 export let ckEditor = () => {
 
-    window.ckEditor = [];
+    window.ckEditors = [];
 
-    let ckEdtiors = document.querySelectorAll('ckeditor');
+    let ckEditors = document.querySelectorAll('.ckeditor');
 
     ckEditors.forEach(ckEditor => {
         
-        ClassicEditor
-        .create( document.querySelector( '#editor' ), {
-            plugins: [ Essentials, Paragraph, Bold, Italic ],
-            toolbar: [ 'bold', 'italic' ]
-        })
+        ClassicEditor.create(ckEditor)
         .then( editor => {
-            console.log( 'Editor was initialized', editor );
         })
         .catch( error => {
-            console.error( error.stack );
+            console.error(error);
         });
     });
 };

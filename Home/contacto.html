@@ -87,15 +87,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="column">
+                                <!-- <div class="column">
                                     <div class="contact-us-option-map">
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.299411772001!2d2.632926015584343!3d39.57540191429806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979266ca625793%3A0xa3958b912e107402!2sC.%20de%20Colub%C3%AD%2C%2018%2C%2007013%20Palma%2C%20Illes%20Balears!5e0!3m2!1ses!2ses!4v1646316187035!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
                                     </div>                                    
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="column">
-                            <form enctype="multipart/form-data" action="#" class="front-form">
+                            <form enctype="multipart/form-data" class="front-form" id="contact-form" name="sql_file">
+                                <div id="errors-container"></div>
                                 <div class="desktop-two-column mobile-one-column">   
                                     <div class="column">
                                         <div class="contact-form-element">
@@ -103,7 +104,7 @@
                                                 <label for="fname">Nombre</label>
                                             </div>
                                             <div class="contact-form-element-input">
-                                                <input type="text" id="fname" name="firstname">
+                                                <input type="text" id="name" name="name">
                                             </div>
                                         </div>
                                         <div class="contact-form-element">
@@ -111,7 +112,7 @@
                                                 <label for="lname">Apellidos</label>
                                             </div>
                                             <div class="contact-form-element-input">
-                                                <input type="text" id="lname" name="lastname">
+                                                <input type="text" id="surname" name="surname">
                                             </div>
                                         </div>                                                                                                                                    
                                     </div>
@@ -121,7 +122,7 @@
                                                 <label for="telf">Teléfono</label>
                                             </div>
                                             <div class="contact-form-element-input">
-                                                <input type="text" id="telf" name="telephon">
+                                                <input type="text" id="telephone" name="telephone">
                                             </div>
                                         </div>   
                                         <div class="contact-form-element">
@@ -146,7 +147,7 @@
                                 </div>
                                 <div class="column">
                                     <div class="contact-form-element-button">
-                                        <button  class="pink-button" type="button">Enviar</button>
+                                        <button  class="pink-button submitButton" type="button">Enviar</button>
                                     </div>                                    
                                 </div>
                             </form>
