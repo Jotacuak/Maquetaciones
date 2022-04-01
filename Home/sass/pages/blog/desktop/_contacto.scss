@@ -65,14 +65,27 @@
             resize: none;
             width: 100%;
         }
+
+        .ck-editor__editable_inline{
+            border: .2rem transparent;
+            border-bottom: .2rem solid hsl(293, 51%, 37%);
+            border-radius: .25rem;
+            height: 16rem;
+            resize: none;
+        }
+
+        
+
+
     }
     
-    .contact-form-element-button{
+}
 
-        button{
-            float: right;
-            padding: 1rem;
-            width: 20%;
-        }
+.contact-form-element-button{
+
+    button{
+        float: right;
+        padding: 1rem .5rem;
+        width: 20%;
     }
 }
