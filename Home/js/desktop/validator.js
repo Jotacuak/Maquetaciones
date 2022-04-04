@@ -3,16 +3,18 @@ import JustValidate from '../../node_modules/just-validate/dist/just-validate.es
 export let validador = (form) => {
     
     let validate = new JustValidate('#' + form.id, {
-            errorFieldCssClass: 'is-invalid',
-            errorLabelStyle: {
-                color: 'red',
-                fontsize: '14px',
-            },
-            focusInvalidField: true,
-            lockForm: true,
-            errorContainer: '#errors-container',
+        errorFieldCssClass: 'is-invalid',
+        errorLabelStyle: {
+            color: 'red',
+            fontsize: '14px',
+        },
+        focusInvalidField: true,
+        lockForm: true,
+        errorsContainer: '#errors-container',
     });
-    
+
+
+        
     validate
     .addField('#name', [
         {
@@ -37,7 +39,7 @@ export let validador = (form) => {
             rule: 'email',
             errorMessage: 'Email is invalid!',
         },
-    ]);
+    ]);                
 
     return validate;
 };
