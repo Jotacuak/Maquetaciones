@@ -16,7 +16,6 @@ export let plusMinus = () => {
             else if (minusPlusButton.dataset.value == 'plus'){
 
                 let plusMinusInput = minusPlusButton.parentElement.getElementsByTagName('input')[0];
-                console.log(plusMinusInput.value);
                 plusMinusInput.value = (parseInt(plusMinusInput.value) + 1);
             }
         });
