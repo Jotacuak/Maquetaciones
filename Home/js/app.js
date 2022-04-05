@@ -3,6 +3,6 @@ import {renderForm} from './desktop/form.js';
 import {ckEditor} from './desktop/ckeditor.js'
 
 
-ckEditor ();
+ckEditor();
 plusMinus();
 renderForm();

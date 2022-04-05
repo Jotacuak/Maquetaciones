@@ -3,7 +3,7 @@ import {validador} from './validator.js';
 
 export let renderForm = () => {
 
-    let buttonSubmit = document.querySelector('.submitButton');
+    let buttonSubmit = document.querySelector('.submit-button');
     let forms = document.querySelectorAll('.front-form')  
     
         
@@ -19,12 +19,12 @@ export let renderForm = () => {
                 
                     let formData = new FormData(form);
 
-                    if (editors != 'null'){
+                    // if (editor != 'null'){
 
-                        Object.entries(editors).forEach(([key, value]) =>{
-                            formData.append(key, value.getData());
-                        });
-                    }
+                    //     Object.entries(editor).forEach(([key, value]) =>{
+                    //         formData.append(key, value.getData());
+                    //     });
+                    // }
 
                     for (let pair of formData.entries()){
                         console.log(pair[0] + ', ' + pair[1])
@@ -35,6 +35,5 @@ export let renderForm = () => {
                 });                
             });
         });
-
     };   
 };

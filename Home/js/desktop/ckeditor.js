@@ -4,15 +4,16 @@ export let ckEditor = () => {
 
     let editors = document.querySelectorAll('.ckeditor');
 
+    window.editors = ckEditor;
+
     editors.forEach(editor => {
         
         ClassicEditor
-        .create(editor)
-        .then( editor => {
-            window.editor = editor;
-        })
-        .catch( error => {
-            console.error(error);
-        });
+            .create(editor)
+            .then( editor => {
+            })
+            .catch( error => {
+                console.error(error);
+            });
     });
 };

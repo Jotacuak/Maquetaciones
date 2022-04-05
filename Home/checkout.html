@@ -7,7 +7,6 @@
 		<title>Checkout | La Lloreria</title>
 		<meta name="description" content="descripción de la web, se recomienda 90 caracteres">
         <meta name="keywords" 	 content="palabras clave, separadas, por comas">
-        <!-- <link rel="stylesheet" href="style/normalize.css"> -->
         <link rel="stylesheet" href="style/app.css" >
     </head>
     <body>
@@ -135,6 +134,9 @@
                                         <div class="checkout-main-details-element-input">
                                             <input class="required" name="email" type="text" id="email">
                                         </div>
+                                        <div class="checkout-main-details-element-input">
+                                            <textarea class="required" name="content" id="editor" class="ckeditor"></textarea>
+                                        </div>   
                                     </div>
                                 </div>
                             </div>
@@ -201,7 +203,7 @@
                                             <p>Sus datos personales se utilizarán para procesar su pedido, respaldar su experiencia en este sitio web y para otros fines descritos en nuestra política de privacidad.</p>
                                         </div>
                                         <div class="checkout-main-order-check-element-button">
-                                            <button class="pink-button submitButton">Realiza el pedido</button>                                     
+                                            <button class="pink-button submit-button" type="submit">Realiza el pedido</button>                                     
                                         </div>
                                     </div>
                                 </div>
