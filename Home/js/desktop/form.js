@@ -15,8 +15,9 @@ export let renderForm = () => {
 
                 let validate = validador(form);
 
-                validate.onSuccess (() => {
+                validate.onSuccess ((ev) => {
                 
+                    ev.preventDefault();
                     let formData = new FormData(form);
 
                     // if (editor != 'null'){

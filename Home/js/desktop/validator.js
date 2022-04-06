@@ -24,7 +24,7 @@ export let validador = (form) => {
         .addField('#name', [
             {
                 rule: 'required',
-                errorMessage: 'Name is invalid!',
+                errorMessage: 'Name is required!',
             },
             {
                 rule: 'minLength',
@@ -35,6 +35,44 @@ export let validador = (form) => {
                 value: 30,
             },
         ])
+        .addField('#surname', [
+            {
+                rule: 'required',
+                errorMessage: 'Surname is required!',
+            },
+            {
+                rule: 'minLength',
+                value: 3,
+            },
+            {
+                rule: 'maxLength',
+                value: 30,
+            },
+        ]) 
+        // .addField('#address', [
+        //     {
+        //         rule: 'required',
+        //         errorMessage: 'Address is required!'
+        //     }
+        // ])    
+        // .addField('#location', [
+        //     {
+        //         rule: 'required',
+        //         errorMessage: 'Location is required!'
+        //     }
+        // ]) 
+        // .addField('#postal_code', [
+        //     {
+        //         rule: 'required',
+        //         errorMessage: 'Postal code is required!'
+        //     }
+        // ])
+        .addField('#mobile_phone', [
+            {
+                rule: 'required',
+                errorMessage: 'Mobile phone is required!'
+            }
+        ]) 
         .addField('#email', [
             {
                 rule: 'required',
@@ -44,7 +82,13 @@ export let validador = (form) => {
                 rule: 'email',
                 errorMessage: 'Email is invalid!',
             },
-        ]);                
-
+        ]);
+        // .addRequiredGroup(
+        //     '#checkbox_group',
+        //     'You should select at least one communication channel',
+        //     {
+        //         errorsContainer: '#errors-container',
+        //     }
+        // );                 
     return validate;
 };
