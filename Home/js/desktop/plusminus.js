@@ -14,10 +14,9 @@ export let plusMinus = () => {
             }
         
             else if (minusPlusButton.dataset.value == 'plus'){
-
                 let plusMinusInput = minusPlusButton.parentElement.getElementsByTagName('input')[0];
                 plusMinusInput.value = (parseInt(plusMinusInput.value) + 1);
             }
         });        
     });      
-}
+};
