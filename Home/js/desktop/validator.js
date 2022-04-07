@@ -2,7 +2,7 @@ import JustValidate from '../../node_modules/just-validate/dist/just-validate.es
 
 export let validador = (form) => {
 
-    let elements = document.querySelectorAll('.required');
+    let invalidElements = document.querySelectorAll('.required');
     let validate = new JustValidate('#' + form.id, {
         errorFieldCssClass: 'is-invalid',
         errorLabelStyle: {
@@ -14,11 +14,9 @@ export let validador = (form) => {
         errorsContainer: '#errors-container',
     });
 
-    elements.forEach(element => {
-        if (element.classList.contains('is-invalid')){
-            validate.destroy();
-        }
-    });
+    if (invalidElements.length > 0){
+        validate.destroy();
+    };
 
     validate
         .addField('#name', [
