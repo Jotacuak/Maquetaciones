@@ -2,8 +2,8 @@ import JustValidate from '../../node_modules/just-validate/dist/just-validate.es
 
 export let validador = (form) => {
 
-    let invalidElements = document.querySelectorAll('.required');
-    let validate = new JustValidate('#' + form.id, {
+    let invalidElements = document.querySelectorAll('.is-invalid');
+    let validate = new JustValidate(form, {
         errorFieldCssClass: 'is-invalid',
         errorLabelStyle: {
             color: 'red',
